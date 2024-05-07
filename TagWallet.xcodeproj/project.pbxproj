@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		67BC147F245205A00028E9FE /* TagWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67BC147F245205A00028E9FE /* Amiibank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amiibank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67BC1482245205A00028E9FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67BC1484245205A00028E9FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		67BC1489245205A00028E9FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		67BC1480245205A00028E9FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				67BC147F245205A00028E9FE /* TagWallet.app */,
+				67BC147F245205A00028E9FE /* Amiibank.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,9 +106,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		67BC147E245205A00028E9FE /* TagWallet */ = {
+		67BC147E245205A00028E9FE /* Amiibank */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67BC1493245205A20028E9FE /* Build configuration list for PBXNativeTarget "TagWallet" */;
+			buildConfigurationList = 67BC1493245205A20028E9FE /* Build configuration list for PBXNativeTarget "Amiibank" */;
 			buildPhases = (
 				67BC147B245205A00028E9FE /* Sources */,
 				67BC147C245205A00028E9FE /* Frameworks */,
@@ -118,12 +118,12 @@
 			);
 			dependencies = (
 			);
-			name = TagWallet;
+			name = Amiibank;
 			packageProductDependencies = (
 				67BC149E245207930028E9FE /* CryptoSwift */,
 			);
 			productName = TagWallet;
-			productReference = 67BC147F245205A00028E9FE /* TagWallet.app */;
+			productReference = 67BC147F245205A00028E9FE /* Amiibank.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -158,7 +158,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				67BC147E245205A00028E9FE /* TagWallet */,
+				67BC147E245205A00028E9FE /* Amiibank */,
 			);
 		};
 /* End PBXProject section */
@@ -345,7 +345,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TagWalletUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Amiibank;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,7 +367,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TagWalletUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Amiibank;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,7 +393,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67BC1493245205A20028E9FE /* Build configuration list for PBXNativeTarget "TagWallet" */ = {
+		67BC1493245205A20028E9FE /* Build configuration list for PBXNativeTarget "Amiibank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67BC1494245205A20028E9FE /* Debug */,

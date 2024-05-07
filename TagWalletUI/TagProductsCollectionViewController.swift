@@ -1,3 +1,4 @@
+// Amiibank by Rilinium
 import Foundation
 import UIKit
 import CoreNFC
