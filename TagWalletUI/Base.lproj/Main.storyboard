@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jvI-DG-NCI">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jvI-DG-NCI">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,21 +13,21 @@
         <!--TagProducts-->
         <scene sceneID="iNt-v4-9vE">
             <objects>
-                <viewController id="3fB-3F-TIL" userLabel="TagProducts" customClass="TagProductsCollectionViewContoller" customModule="TagWallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3fB-3F-TIL" userLabel="TagProducts" customClass="TagProductsCollectionViewContoller" customModule="Amiibank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pty-fK-uwE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMy-Wr-Ov3">
-                                <rect key="frame" x="0.0" y="88" width="414" height="64"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="jkB-st-QfA"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t2r-w3-fCg">
-                                <rect key="frame" x="0.0" y="194" width="414" height="668"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="209" width="393" height="609"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="8" minimumInteritemSpacing="8" id="52K-eo-INh">
                                     <size key="itemSize" width="128" height="200"/>
                                     <size key="headerReferenceSize" width="40" height="40"/>
@@ -33,12 +35,12 @@
                                     <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="40"/>
                                 </collectionViewFlowLayout>
                                 <view key="backgroundView" contentMode="scaleToFill" id="IWp-2q-o2B">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="668"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="609"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagProduct" id="ZKH-s3-eu0" customClass="TagProductCollectionViewCell" customModule="TagWallet" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagProduct" id="ZKH-s3-eu0" customClass="TagProductCollectionViewCell" customModule="Amiibank" customModuleProvider="target">
                                         <rect key="frame" x="8" y="48" width="114" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bL4-G6-8HH">
@@ -78,12 +80,12 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Header" id="26C-w7-ajn" customClass="TagProductsHeaderView" customModule="TagWallet" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Header" id="26C-w7-ajn" customClass="TagProductsHeaderView" customModule="Amiibank" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yp-xZ-Dyf">
-                                            <rect key="frame" x="8" y="8" width="398" height="24"/>
+                                            <rect key="frame" x="8" y="8" width="377" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -105,7 +107,7 @@
                                 </connections>
                             </collectionView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="p8s-Of-vB3">
-                                <rect key="frame" x="8" y="152" width="398" height="31"/>
+                                <rect key="frame" x="8" y="167" width="377" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="p94-vo-boZ"/>
                                 </constraints>
@@ -119,7 +121,8 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="MqU-qO-uj6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MqU-qO-uj6" firstAttribute="trailing" secondItem="t2r-w3-fCg" secondAttribute="trailing" id="4Nt-0c-dBP"/>
                             <constraint firstItem="MqU-qO-uj6" firstAttribute="trailing" secondItem="p8s-Of-vB3" secondAttribute="trailing" constant="8" id="6jo-7q-Dsq"/>
@@ -132,7 +135,6 @@
                             <constraint firstItem="MqU-qO-uj6" firstAttribute="trailing" secondItem="iMy-Wr-Ov3" secondAttribute="trailing" id="ghZ-W4-D82"/>
                             <constraint firstItem="p8s-Of-vB3" firstAttribute="top" secondItem="iMy-Wr-Ov3" secondAttribute="bottom" id="zDK-bz-EfF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="MqU-qO-uj6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tags" id="7H8-ZZ-UXF">
                         <barButtonItem key="rightBarButtonItem" title="Scan Tag" id="aq9-DA-H9F">
@@ -157,7 +159,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jvI-DG-NCI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="76F-H9-hwO">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -175,7 +177,7 @@
                 <navigationController storyboardIdentifier="TagProductNavViewController" automaticallyAdjustsScrollViewInsets="NO" id="sfM-fM-IeN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="og8-E7-s3s">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -190,23 +192,23 @@
         <!--TagProduct-->
         <scene sceneID="ceQ-wD-Tyg">
             <objects>
-                <tableViewController id="Bww-5k-soL" userLabel="TagProduct" customClass="TagProductViewController" customModule="TagWallet" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Bww-5k-soL" userLabel="TagProduct" customClass="TagProductViewController" customModule="Amiibank" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="68" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Gtd-dR-zbV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="7mO-KN-krS">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="450"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gbQ-Jl-e8D">
-                                    <rect key="frame" x="20" y="30" width="374" height="390"/>
+                                    <rect key="frame" x="20" y="30" width="353" height="390"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="370" id="UQa-Nm-to6"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="gbQ-Jl-e8D" firstAttribute="top" secondItem="7mO-KN-krS" secondAttribute="top" constant="30" id="67d-Eg-Efw"/>
                                 <constraint firstAttribute="trailing" secondItem="gbQ-Jl-e8D" secondAttribute="trailing" constant="20" id="BDA-6n-eIF"/>
@@ -215,7 +217,7 @@
                             </constraints>
                         </view>
                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No dumps found.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hHf-Na-pci">
-                            <rect key="frame" x="0.0" y="591.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="591.33333015441895" width="393" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -223,21 +225,21 @@
                         </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Dump" textLabel="DJK-3u-ghv" detailTextLabel="oZa-eA-yZn" imageView="FRx-Hg-tG4" style="IBUITableViewCellStyleSubtitle" id="pii-u2-owU">
-                                <rect key="frame" x="0.0" y="505.5" width="414" height="68"/>
+                                <rect key="frame" x="0.0" y="505.33333206176758" width="393" height="68"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pii-u2-owU" id="5nt-80-g0V">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="68"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="68"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DJK-3u-ghv">
-                                            <rect key="frame" x="85" y="14" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="85" y="13.999999999999998" width="33" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oZa-eA-yZn">
-                                            <rect key="frame" x="85" y="37.5" width="44" height="14.5"/>
+                                            <rect key="frame" x="85" y="37.333333333333329" width="43.666666666666664" height="14.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -274,5 +276,8 @@
     </scenes>
     <resources>
         <image name="binary_file" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

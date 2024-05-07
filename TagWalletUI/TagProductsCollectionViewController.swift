@@ -1,11 +1,4 @@
-//
-//  TagProductsCollectionViewController.swift
-//  TagWallet
-//
-//  Created by Kevin Brewster on 4/23/20.
-//  Copyright © 2020 Kevin Brewster. All rights reserved.
-//
-
+// Amiibank by Rilinium
 import Foundation
 import UIKit
 import CoreNFC
@@ -97,14 +90,15 @@ class TagProductsCollectionViewContoller : UIViewController {
         if let type = productTagType {
             filteredTagProducts = filteredTagProducts.filter { $0.type == type }
         }
-        if let search = searchController.searchBar.text?.lowercased(), search != "" {
+        if let search = searchController.searchBar.text?.lowercased(), !search.isEmpty {
             filteredTagProducts = filteredTagProducts.filter { $0.productSeries.lowercased().contains(search) || $0.gameSeries.lowercased().contains(search) || $0.name.lowercased().contains(search) }
         }
-        filteredTagProductGroups = Dictionary(grouping: filteredTagProducts, by: { $0.productSeries }).map({ $0 }).sorted(by: { (a, b) -> Bool in
-            a.gameSeries < b.gameSeries
-        })
+        filteredTagProductGroups = Dictionary(grouping: filteredTagProducts, by: { $0.gameSeries })
+            .map { (gameSeries: $0.key, tagProducts: $0.value) }
+            .sorted(by: { $0.gameSeries < $1.gameSeries })
         self.collectionView.reloadData()
     }
+
     
     func showTagProduct(_ tagProduct: TagProduct, newDump: TagDump? = nil) {
         guard let navVC = storyboard?.instantiateViewController(identifier: "TagProductNavViewController") as? UINavigationController,

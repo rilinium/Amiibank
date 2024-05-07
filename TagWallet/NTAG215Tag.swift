@@ -1,6 +1,6 @@
 //
 //  NTAG215Tag.swift
-//  TagWallet
+//  Amiibank
 //
 //  Created by Kevin Brewster on 4/21/20.
 //  Copyright © 2020 Kevin Brewster. All rights reserved.

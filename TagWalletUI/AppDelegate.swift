@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  TagWallet
+//  Amiibank
 //
 //  Created by Kevin Brewster on 4/23/20.
 //  Copyright © 2020 Kevin Brewster. All rights reserved.

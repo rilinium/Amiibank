@@ -1,6 +1,6 @@
 //
 //  TagProductViewController.swift
-//  TagWallet
+//  Amiibank
 //
 //  Created by Kevin Brewster on 4/23/20.
 //  Copyright © 2020 Kevin Brewster. All rights reserved.
@@ -91,7 +91,7 @@ extension TagProductViewController {
             present(alert, animated: true, completion: nil)
             
         } else {
-            let alert = UIAlertController(title: "No decryption keys in wallet!", message: "You cannot write this dump without decryption keys!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "No decryption keys in Amiibank!", message: "You cannot write this dump without decryption keys!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
         }
