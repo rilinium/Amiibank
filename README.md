@@ -14,6 +14,7 @@ It's similar to the Android [TagMo](https://github.com/HiddenRamblings/TagMo) Ap
 ## Requirements
 
 -iPhone 7 or above and iOS 13 or above (for NFC write capabilities).
+
 -A paid Apple Developer Account if building yourself, to enable NFC support.
 
 ## Installation
