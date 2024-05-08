@@ -1,4 +1,5 @@
 // Amiibank by Rilinium
+//TagProductsCollectionViewController.swift
 import Foundation
 import UIKit
 import CoreNFC
